@@ -1,0 +1,266 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #181818;
+  color: white;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  background: #333;
+  color: #fff;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease;
+}
+
+
+body.dark-mode nav {
+  background: #121212;
+}
+
+nav .logo {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff6347;
+}
+
+/* Dark Mode Toggle Button */
+.mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #2575fc;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.mode-toggle:hover {
+  background-color: #6a11cb;
+  transform: scale(1.05);
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  animation: fadeIn 1.5s ease;
+}
+
+header h1 {
+  font-size: 3.5em;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.5em;
+  margin: 20px 0;
+}
+
+header .btn {
+  background: white;
+  color: #6a11cb;
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+header .btn:hover {
+  background: #ff6347;
+  transform: scale(1.1);
+}
+
+/* Sections */
+section {
+  padding: 80px 20px;
+  text-align: center;
+  animation: fadeInUp 1.5s ease;
+}
+
+/* Features Section */
+#features {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.feature-card {
+  background: #7994eb;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#demo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.image-preview {
+  margin-top: 20px;
+  width: 300px;
+  height: 200px;
+  border: 2px dashed #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9;
+  color: #888;
+  transition: background 0.3s ease;
+}
+
+#outputPreview {
+  margin-top: 20px;
+  width: 300px;
+  height: 200px;
+  border: 2px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9;
+  color: #888;
+}
+
+#imageInput {
+  padding: 12px;
+  font-size: 1.1em;
+  margin-top: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+#imageInput:hover {
+  border-color: #6a11cb;
+}
+
+button#processImage {
+  background: #6a11cb;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button#processImage:hover {
+  background: #2575fc;
+  transform: scale(1.05);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 450px;
+  margin: 40px auto;
+}
+
+form input,
+form textarea,
+form button {
+  padding: 12px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form input,
+form textarea {
+  width: 100%;
+}
+
+form button {
+  background: #6a11cb;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+form button:hover {
+  background: #2575fc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: 15px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
