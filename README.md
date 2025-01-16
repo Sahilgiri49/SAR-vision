@@ -78,10 +78,6 @@ SAR-vision/
 Feel free to contribute to this project! 🛠️  
 If you find any bugs or have feature suggestions, please open an issue or submit a pull request.
 
----
-
-## ✨ **License**:
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
